@@ -14,15 +14,15 @@ const jwt = require('jsonwebtoken');
 const app = Express()
 
 const openai = new OpenAI({
-    apiKey: "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", //"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" //
-    organization:"org-vgtA49U564eqdvlhcRt8LYih"
+    apiKey: "", //"" //
+    organization:""
 });
 
 const con = mysql.createPool({
-	host: "sv81.ifastnet.com",
-	user: "boobasix_chatbot",
-	password: "sk-urYrMiszgq",
-	database: "boobasix_chatbot"
+	host: "",
+	user: "",
+	password: "",
+	database: ""
 });
 
 const query = util.promisify(con.query).bind(con);
